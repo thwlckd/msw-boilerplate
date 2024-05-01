@@ -1,10 +1,5 @@
 import { useEffect, useState } from 'react';
-
-interface User {
-  id: number;
-  name: string;
-  email: string;
-}
+import { User } from '../mocks/data/user';
 
 const Real = () => {
   const [users, setUsers] = useState<User[]>();
