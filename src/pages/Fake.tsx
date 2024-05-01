@@ -7,7 +7,7 @@ const Fake = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_SOME_KEY}/users`);
+        const response = await fetch(`${import.meta.env.VITE_SERVER_BASE_URL}/users`);
 
         setUsers(await response.json());
       } catch (error) {
