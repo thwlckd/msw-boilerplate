@@ -1,13 +1,13 @@
 import { Outlet } from 'react-router-dom';
+import Header from './Header';
 
 const Layout = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <header style={{ height: '200px', backgroundColor: 'lightyellow' }}>header</header>
-      <main style={{ marginBottom: 'auto' }}>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="h-full">
         <Outlet />
       </main>
-      <footer style={{ height: '200px', backgroundColor: 'lightyellow' }}>footer</footer>
     </div>
   );
 };
