@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Real from './pages/Real';
 import Fake from './pages/Fake';
+import Delay from './pages/Delay';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/real" element={<Real />} />
           <Route path="/fake" element={<Fake />} />
+          <Route path="/delay" element={<Delay />} />
         </Route>
       </Routes>
     </BrowserRouter>

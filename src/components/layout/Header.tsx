@@ -13,6 +13,9 @@ const Header = () => {
         <Link className="ml-10 p-4 bg-blue-100" to="/fake">
           Fake API
         </Link>
+        <Link className="ml-10 p-4 bg-blue-100" to="/delay">
+          Delay API
+        </Link>
       </nav>
     </header>
   );
